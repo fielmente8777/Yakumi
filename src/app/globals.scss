@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@font-face {
+  font-family: "go3v2";
+  src: url(/fonts/go3v2.ttf) format("truetype");
+}
+
+.thiket {
+  font-family: "go3v2", sans-serif;
+  font-optical-sizing: auto;
+}
+.nunito {
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+}
+
+:root {
+  --font-body: nunito;
+  --font-heading: thiket;
+}
+
+* {
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0.48rem;
+}
+::-webkit-scrollbar-button {
+  background-color: #1f1f1f;
+  border-radius: 0.7rem;
+  border: 1px solid #ffefe3;
+}
+::-webkit-scrollbar-corner {
+  border-radius: 50%;
+}
+::-webkit-scrollbar-track {
+  background-color: #C72C27be;
+  margin-block: 0.1rem;
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #1f1f1f;
+  border-radius: 1rem;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .thiket {
+    font-family: "Thiket Regular" sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  // .letter_spacing {
+  //   letter-spacing: -0.07em;
+  // }
+  .no-spinner::-webkit-outer-spin-button,
+  .no-spinner::-webkit-inner-spin-button {
+    @apply appearance-none;
+    margin: 0;
+  }
+
+  .no-spinner {
+    @apply appearance-none;
+  }
+
+  .box_shadow {
+    background: #fff;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.20);
+  }
+
+  .max-width {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media screen and (max-width: 770px) {
+      padding: 0 1.2rem;
+    }
+  }
+  .max-width1 {
+    max-width: 1260px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media screen and (max-width: 770px) {
+      padding: 0 1.2rem;
+    }
+  }
+  .max-screen {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .largeHeading {
+    font-size: 3rem;
+    line-height: normal;
+    @media screen and (max-width: 640px) {
+      font-size: 2.5rem;
+    }
+  }
+  .mediumHeading {
+    font-size: 2rem;
+    line-height: normal;
+    @media screen and (max-width: 640px) {
+      font-size: 1.5rem;
+    }
+  }
+  .heading1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    @media screen and (max-width: 640px) {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+  }
+  .description1 {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    @media screen and (max-width: 640px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+  .description2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    @media screen and (max-width: 640px) {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+    }
+  }
+  .description3 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    @media screen and (max-width: 640px) {
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+    }
+  }
+}
+.our_features_swiper {
+  .pagination,
+  .pagination_1,
+  .pagination_2 {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // gap: 0.4rem;
+
+    .swiper-pagination-bullet {
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: rgba(199, 44, 39, 0.5); // Light blue color
+      border-radius: 50%;
+      opacity: 1;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .swiper-pagination-bullet-active {
+      // width: 0.8rem;
+      // height: 0.8rem;
+      background-color: #C72C27;
+      position: relative;
+      border-radius: 50%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -0.25rem;
+        left: -0.25rem;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: 1px solid #1f1f1f; // Dark outer border
+      }
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #C72C27;
+    background-color: #fff;
+    width: 3rem;
+    height: 3rem;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+
+    &::after {
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 2rem;
+      height: 2rem;
+
+      &::after {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .swiper-button-next {
+      right: 0;
+    }
+    .swiper-button-prev {
+      left: 0;
+    }
+  }
+}
