@@ -107,7 +107,7 @@ const Form = () => {
       <div className="flex flex-col gap-2">
         <MainHeading
           title="Craving authentic asian flavors ?"
-          className="mediumHeading thiket font-semibold text-white text-center"
+          className="mediumHeading font_go font-semibold text-white text-center"
         />
         <p className="description1 text-white text-center">
           Reach out to us – your taste adventure starts here!

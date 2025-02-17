@@ -19,7 +19,7 @@ const OurFeatures: React.FC<OurFeaturesDataProps> = ({
         <div className="">
           <MainHeading
             title={title}
-            className="text-tertiary text-center mediumHeading thiket uppercase letter_spacing font-semibold"
+            className="text-tertiary text-center mediumHeading font_go uppercase letter_spacing font-semibold"
           />
           <Paragraph
             text={desc}
@@ -28,7 +28,7 @@ const OurFeatures: React.FC<OurFeaturesDataProps> = ({
         </div>
         <div className="w-full">
           <Swiper
-            slidesPerView={1.1}
+            slidesPerView={1.3}
             spaceBetween={12}
             modules={[Navigation, Pagination]}
             navigation

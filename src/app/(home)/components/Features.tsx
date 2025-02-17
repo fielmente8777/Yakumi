@@ -14,7 +14,7 @@ const Features: React.FC<FeaturesDataProps> = ({ title, desc, cards }) => {
       <div className="flex flex-col w-full overflow-hidden bg-primary">
         <MainHeading
           title={title}
-          className="text-white text-center mediumHeading thiket uppercase letter_spacing font-semibold"
+          className="text-white text-center mediumHeading font_go uppercase letter_spacing font-semibold"
         />
         <Paragraph text={desc} className="text-center heading1 text-white" />
         <div className="lg:grid hidden grid-cols-3 gap-20  mt-12 relative">

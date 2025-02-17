@@ -9,7 +9,7 @@
   src: url(/fonts/go3v2.ttf) format("truetype");
 }
 
-.thiket {
+.font_go {
   font-family: "go3v2", sans-serif;
   font-optical-sizing: auto;
 }
@@ -20,7 +20,7 @@
 
 :root {
   --font-body: nunito;
-  --font-heading: thiket;
+  --font-heading: font_go;
 }
 
 * {
@@ -56,8 +56,8 @@
   .text-balance {
     text-wrap: balance;
   }
-  .thiket {
-    font-family: "Thiket Regular" sans-serif;
+  .font_go {
+    font-family: "font_go Regular" sans-serif;
     font-optical-sizing: auto;
   }
 

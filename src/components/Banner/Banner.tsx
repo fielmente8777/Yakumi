@@ -18,7 +18,7 @@ const Banner: React.FC<BannerProps> = ({ title, desc, src, buttons }) => {
       <div className="grid lg:grid-cols-9 items-center gap-3 justify-center grid-cols-1">
         <div className="lg:col-span-4 w-full">
           <div className="flex flex-col gap-4 ml-auto max-w-lg w-full">
-            <h1 className="largeHeading thiket uppercase letter_spacing font-semibold">
+            <h1 className="largeHeading font_go uppercase letter_spacing font-semibold">
               {title}
             </h1>
             <Paragraph className={"mt-4 description1 text-white"} text={desc} />
@@ -36,7 +36,7 @@ const Banner: React.FC<BannerProps> = ({ title, desc, src, buttons }) => {
         </div>
         <div className="lg:col-span-5">
           <div className="relative w-full aspect-video">
-            <LazyLoadedVideo src={src} poster={src} />
+            <LazyLoadedVideo src={src} poster={src} controls={false} />
           </div>
         </div>
       </div>

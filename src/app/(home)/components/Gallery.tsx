@@ -16,7 +16,7 @@ const Gallery: React.FC<GalleryDataProps> = ({ title, images }) => {
       <div className="flex flex-col items-center justify-center w-full lg:gap-14 gap-7 our_features_swiper">
         <MainHeading
           title={title}
-          className="text-tertiary text-center mediumHeading thiket uppercase letter_spacing font-semibold"
+          className="text-tertiary text-center mediumHeading font_go uppercase letter_spacing font-semibold"
         />
         <div className="w-full">
           <Swiper

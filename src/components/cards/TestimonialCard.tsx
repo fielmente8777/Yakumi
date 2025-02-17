@@ -2,6 +2,7 @@ import Image from "next/image";
 import Paragraph from "../Paragraph/Paragraph";
 import MainHeading from "../Heading/MainHeading";
 import { FillStar } from "@/icons/icons";
+import { imageUrl } from "@/data/links";
 
 const TestimonialCard = () => {
   return (
@@ -9,7 +10,7 @@ const TestimonialCard = () => {
       <div className="max-w-sm w-full">
         <div className="relative w-full aspect-[4/3]">
           <Image
-            src="/Frame.png"
+            src={imageUrl+ 'Frame.webp'}
             alt="rating"
             fill
             className="object-contain"
