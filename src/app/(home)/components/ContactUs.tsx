@@ -7,10 +7,10 @@ const ContactUs = () => {
   return (
     <Section>
       <Section className="bg-primary !py-8" id="contact_us">
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-10 gap-8">
-          <div className="col-span-1 w-full flex justify-end relative">
-            <div className="absolute -top-[40%] w-full">
-              <div className="relative w-full aspect-[4/4.8]">
+        <div className="lg:grid flex flex-col-reverse grid-cols-2 lg:gap-10 gap-8 max-md:px-4">
+          <div className="col-span-1 w-full flex justify-end relative max-sm:h-[9.5rem]">
+            <div className="absolute lg:-top-[40%] -top-[28%] max-sm:-right-8 w-full">
+              <div className="relative w-full lg:aspect-[4/4.8] aspect-[4/4]">
                 <Image
                   src={imageUrl + "img5.webp"}
                   alt="contact"

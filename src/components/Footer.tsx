@@ -22,16 +22,14 @@ const Footer = () => {
               className="object-contain"
             />
           </div>
-          <ul className="flex flex-wrap  max-w-xl w-full items-center justify-center gap-4 mt-4">
+          <ul className="flex flex-wrap max-sm:flex-col  max-w-xl w-full items-center justify-center gap-4 lg:mt-4">
             {FooterLink[1].links.map((link) => (
-              <li
-                key={link.id}
-              >
+              <li key={link.id}>
                 <Link
                   href={link.href}
                   key={link.id}
                   target={link.title === "quick links" ? "_self" : "_blank"}
-                  className="flex w-full items-center gap-2 description2 text-light transition-all"
+                  className="flex w-full text-center gap-2 description2 text-light transition-all"
                 >
                   <span className="">{link.icon}</span> {link.label}
                 </Link>
@@ -76,40 +74,27 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-          {FooterLink.slice(0, 1).map((item) => (
-            <div key={item.id}>
-              <ul className="flex gap-16">
-                {item.links.map((link) => (
-                  <li key={link.id}>
-                    <Link
-                      href={link.href}
-                      key={link.id}
-                      target={item.title === "quick links" ? "_self" : "_blank"}
-                      className="description2 text-light transition-all"
-                    >
-                      {link.title && (
-                        <b className="capitalize">{link.title} : </b>
-                      )}
-                      <span
-                        className={
-                          item.title === "quick links" ? "capitalize" : ""
-                        }
-                      >
-                        {link.label}
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <ul className="lg:flex hidden gap-16">
+            {FooterLink[0].links.map((link) => (
+              <li key={link.id}>
+                <Link
+                  href={link.href}
+                  key={link.id}
+                  className="description2 text-light transition-all"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </SectionWithContainer>
       <SectionWithContainer sectionClassName="bg-secondary !py-4 text-white">
-        <div className="flex max-md:flex-col items-center justify-between gap-4">
-          <p className="">
-            © {currentYear} Yakumi. All Rights Reserved. Designed & Developed
-            by{" "}
+        <div className="flex max-md:flex-col items-center lg:justify-between gap-4">
+          <p className="text-center">
+            © {currentYear} Yakumi. <br className="lg:hidden" />
+            All Rights Reserved. <br className="lg:hidden" />
+            Designed & Developed by{" "}
             <Link href="https://eazotel.com" className="font-bold">
               Eazotel
             </Link>

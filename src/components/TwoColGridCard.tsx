@@ -42,7 +42,7 @@ const TwoColGridCard: React.FC<AboutUsDataProps> = ({
               <h2 className="capitalize font_go text-primary mediumHeading ">
                   {title}
               </h2>
-              <h3 className="capitalize text-secondary heading1">
+              <h3 className="capitalize text-secondary heading1 font-semibold">
                 {subtitle}
               </h3>
             </div>
