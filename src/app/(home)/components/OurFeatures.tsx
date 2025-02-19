@@ -19,7 +19,7 @@ const OurFeatures: React.FC<OurFeaturesDataProps> = ({
         <div className="flex flex-col items-center justify-center gap-2">
           <MainHeading
             title={title}
-            className="text-tertiary text-center mediumHeading font_go uppercase letter_spacing font-semibold"
+            className="!text-primary text-center mediumHeading font_go uppercase letter_spacing font-semibold"
           />
           <Paragraph
             text={desc}

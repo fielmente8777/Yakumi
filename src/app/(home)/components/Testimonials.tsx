@@ -23,7 +23,7 @@ const Testimonials: React.FC = () => {
           <div className="pagination_3 flex items-center justify-center gap-2"></div>
         </div>
       </div>
-      <div className="absolute lg:top-0 -top-4 lg:left-2 left-10 lg:rotate-3 -rotate-3 max-width1 h-[22rem] w-full bg-tertiary rounded-lg"></div>
+      <div className="absolute lg:top-0 -top-4 lg:left-2 left-10 lg:rotate-3 -rotate-3 max-width1 h-[22rem] w-full bg-primary rounded-lg"></div>
     </SectionWithContainer>
   );
 };

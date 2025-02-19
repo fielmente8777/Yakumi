@@ -16,13 +16,13 @@ const Gallery: React.FC<GalleryDataProps> = ({ title, images }) => {
       <div className="flex flex-col items-center justify-center w-full lg:gap-14 gap-7 our_features_swiper">
         <MainHeading
           title={title}
-          className="text-tertiary text-center mediumHeading font_go uppercase letter_spacing font-semibold"
+          className="!text-primary text-center mediumHeading font_go uppercase letter_spacing font-semibold"
         />
         <div className="w-full">
           <Swiper
             slidesPerView={1}
             spaceBetween={20}
-            modules={[Pagination,Navigation]}
+            modules={[Pagination, Navigation]}
             navigation
             pagination={{ clickable: true, el: ".pagination_1" }}
             breakpoints={{
@@ -57,7 +57,12 @@ const Gallery: React.FC<GalleryDataProps> = ({ title, images }) => {
         </div>
         <div className="pagination_1 flex items-center justify-center gap-1 w-full"></div>
 
-        <Button href="https://www.instagram.com/burgergullykolkata/?hl=en" label="View Instagram" newTabe className="bg-secondary " />
+        <Button
+          href="https://www.instagram.com/burgergullykolkata/?hl=en"
+          label="View Instagram"
+          newTabe
+          className="bg-secondary "
+        />
       </div>
     </SectionWithContainer>
   );
