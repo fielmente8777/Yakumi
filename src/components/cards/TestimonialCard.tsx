@@ -3,8 +3,12 @@ import Paragraph from "../Paragraph/Paragraph";
 import MainHeading from "../Heading/MainHeading";
 import { FillStar, Divider } from "@/icons/icons";
 import { imageUrl } from "@/data/links";
+import { TestimonialsDataProps } from "@/@types/types";
 
-const TestimonialCard = () => {
+const TestimonialCard: React.FC<TestimonialsDataProps> = ({
+  name,
+  text,
+}) => {
   return (
     <div className="w-full flex max-sm:flex-col items-center justify-center">
       <div className="max-w-sm w-full px-6">
@@ -32,9 +36,10 @@ const TestimonialCard = () => {
             </li>
           ))}
         </ul>
-        <Paragraph text="Every burger from Burger Gully is packed with bold, irresistible flavors that take your taste buds on a delicious journey. From juicy patties to creative toppings, every bite is an unforgettable experience!" />
+        <Paragraph text=
+          {text} />
 
-        <MainHeading title="Ashish" className="description1" />
+        <MainHeading title={name} className="description1" />
       </div>
     </div>
   );

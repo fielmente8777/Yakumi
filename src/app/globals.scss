@@ -13,6 +13,7 @@
   font-family: "go3v2", sans-serif;
   font-optical-sizing: auto;
 }
+
 .nunito {
   font-family: "Nunito", serif;
   font-optical-sizing: auto;
@@ -34,19 +35,23 @@
 ::-webkit-scrollbar {
   width: 0.48rem;
 }
+
 ::-webkit-scrollbar-button {
   background-color: #1f1f1f;
   border-radius: 0.7rem;
   border: 1px solid #ffefe3;
 }
+
 ::-webkit-scrollbar-corner {
   border-radius: 50%;
 }
+
 ::-webkit-scrollbar-track {
   background-color: #c72c27be;
   margin-block: 0.1rem;
   border-radius: 0.5rem;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #1f1f1f;
   border-radius: 1rem;
@@ -56,6 +61,7 @@
   .text-balance {
     text-wrap: balance;
   }
+
   .font_go {
     font-family: "font_go Regular" sans-serif;
     font-optical-sizing: auto;
@@ -88,6 +94,7 @@
       padding: 0 1.2rem;
     }
   }
+
   .max-width1 {
     max-width: 1260px;
     margin: 0 auto;
@@ -99,6 +106,7 @@
       height: 105%;
     }
   }
+
   .max-screen {
     max-width: 1600px;
     margin: 0 auto;
@@ -108,51 +116,64 @@
   .largeHeading {
     font-size: 3rem;
     line-height: normal;
+
     @media screen and (max-width: 640px) {
       font-size: 2.5rem;
     }
   }
+
   .mediumHeading {
     font-size: 2rem;
     line-height: normal;
+
     @media screen and (max-width: 640px) {
       font-size: 1.5rem;
     }
   }
+
   .heading1 {
     font-size: 1.5rem;
     line-height: 2rem;
+
     @media screen and (max-width: 640px) {
       font-size: 1.2rem;
       line-height: 1.5rem;
     }
   }
+
   .description1 {
     font-size: 1.125rem;
     line-height: 1.625rem;
+
     @media screen and (max-width: 640px) {
       font-size: 1rem;
       line-height: 1.5rem;
     }
   }
+
   .description2 {
     font-size: 1rem;
     line-height: 1.5rem;
+
     @media screen and (max-width: 640px) {
       font-size: 0.875rem;
       line-height: 1.5rem;
     }
   }
+
   .description3 {
     font-size: 0.875rem;
     line-height: 1.25rem;
+
     @media screen and (max-width: 640px) {
       font-size: 0.75rem;
       line-height: 1.25rem;
     }
   }
 }
+
 .our_features_swiper {
+
   .pagination,
   .pagination_1,
   .pagination_2,
@@ -221,10 +242,11 @@
 
   @media screen and (max-width: 640px) {
     .swiper-button-next {
-      right: 0;
+      right: 5;
     }
+
     .swiper-button-prev {
-      left: 0;
+      left: 5;
     }
   }
 }
@@ -253,6 +275,7 @@
   background-image: url("/bg2.png");
   bottom: -3rem;
   left: 10px;
+
   @media (width < 780px) {
     background: none;
   }
@@ -262,6 +285,7 @@
   background-image: url("/bg1.png");
   top: -2rem;
   right: 10px;
+
   @media (width < 780px) {
     background: none;
   }
@@ -271,6 +295,7 @@
   background-image: url("/bg3.png");
   top: -5.5rem;
   left: 0px;
+
   @media (width < 780px) {
     background: none;
   }
@@ -280,6 +305,7 @@
   background-image: url("/bg4.png");
   bottom: -4rem;
   right: 0px;
+
   @media (width < 780px) {
     background: none;
   }
@@ -289,6 +315,7 @@
   background-image: url("/bg2.png");
   top: 15px;
   right: 0px;
+
   @media (width < 780px) {
     background: none;
   }

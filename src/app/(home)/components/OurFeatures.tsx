@@ -48,7 +48,7 @@ const OurFeatures: React.FC<OurFeaturesDataProps> = ({
             {images.map((image) => (
               <SwiperSlide
                 key={image.id}
-                className="w-full relative lg:aspect-[4/2.2] aspect-video rounded-lg overflow-hidden"
+                className="w-full relative lg:aspect-[4/2.2] aspect-[4/2.5] rounded-lg overflow-hidden"
               >
                 <Image
                   src={image.src}
@@ -57,7 +57,7 @@ const OurFeatures: React.FC<OurFeaturesDataProps> = ({
                   className="object-cover"
                   sizes="100vw"
                 />
-                <p className="absolute bottom-4 right-4 text-white description1 text-sm font-semibold bg-primary px-2 py-1 rounded-md">
+                <p className="absolute bottom-4 right-4 text-white description1 text-sm font-semibold bg-primary/50 px-2 py-1 rounded-md">
                   {image.title}
                 </p>
               </SwiperSlide>

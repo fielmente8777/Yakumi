@@ -181,7 +181,7 @@ const Form = () => {
       </div>
       <button
         type="submit"
-        className="bg-secondary text-sm text-white px-5 py-3 font-normal capitalize hover:bg-secondary/80 duration-500 rounded-full border"
+        className="bg-secondary text-sm text-white px-5 py-4 font-normal capitalize hover:bg-secondary/80 duration-500 rounded-full"
       >
         {formRes ? "Loading...." : "Submit"}
       </button>

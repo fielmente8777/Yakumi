@@ -63,6 +63,12 @@ export interface OurFeaturesDataProps {
   }[];
 }
 
+export interface TestimonialsDataProps {
+  id: number;
+  name: string;
+  text: string;
+}
+
 export interface GalleryDataProps {
   title: string;
   images: string[];

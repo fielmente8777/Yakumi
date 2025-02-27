@@ -61,7 +61,7 @@ const Gallery: React.FC<GalleryDataProps> = ({ title, images }) => {
           href="https://www.instagram.com/burgergullykolkata/?hl=en"
           label="View Instagram"
           newTabe
-          className="bg-secondary "
+          className="bg-secondary px-6 "
         />
       </div>
     </SectionWithContainer>

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <Banner {...pageData.bannerData} />
-      <About {...pageData.aboutUsData} /> 
+      <About {...pageData.aboutUsData} />
       <Features {...pageData.features} />
       <OurFeatures {...pageData.ourFeatures} />
       <Testimonials />

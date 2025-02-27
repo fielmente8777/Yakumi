@@ -29,7 +29,7 @@ const Footer = () => {
                   href={link.href}
                   key={link.id}
                   target={link.title === "quick links" ? "_self" : "_blank"}
-                  className="flex w-full text-center gap-2 description2 text-light transition-all"
+                  className="flex w-full text-center gap-2 text-[18px] text-[#2A2A2A] transition-all"
                 >
                   <span className="">{link.icon}</span> {link.label}
                 </Link>

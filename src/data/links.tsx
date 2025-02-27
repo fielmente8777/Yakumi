@@ -53,13 +53,13 @@ export const SocialLink: socialLinkProps[] = [
     id: 1,
     label: "facebook",
     icon: <FillFacebook />,
-    href: "https://www.facebook.com/people/Burger-Gully-Kolkata/61559753117983/#",
+    href: "https://www.facebook.com/yakumi.india?igsh=Y2h2NDAwYzh2YWU4&utm_source=qr",
   },
   {
     id: 2,
     label: "instagram",
     icon: <FillInstagram />,
-    href: "https://www.instagram.com/burgergullykolkata/?hl=en",
+    href: "https://www.instagram.com/yakumi.india?igsh=Y2h2NDAwYzh2YWU4&utm_source=qr",
   },
 ];
 

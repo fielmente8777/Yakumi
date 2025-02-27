@@ -22,13 +22,13 @@ const Banner: React.FC<BannerProps> = ({ title, desc, src, buttons }) => {
               {title}
             </h1>
             <Paragraph className={"mt-4 description1 text-white max-sm:text-center"} text={desc} />
-            <div className="flex items-center gap-5 mt-4">
+            <div className="flex items-center max-sm:justify-center gap-5 mt-4">
               {buttons.map((button, i) => (
                 <Button
                   key={i}
                   label={button.label}
                   href={button.href}
-                  className={`${i === 0 ? "bg-secondary" : "bg-white !text-secondary"} `}
+                  className={`px-6 text-center ${i === 0 ? "bg-secondary" : "bg-white !text-secondary"} `}
                 />
               ))}
             </div>

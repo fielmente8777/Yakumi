@@ -21,7 +21,7 @@ const Features: React.FC<FeaturesDataProps> = ({ title, desc, cards }) => {
           {cards.map((card) => (
             <FeatureCard key={card.id} {...card} />
           ))}
-          <div className="border-t-2 border-secondary lg:block hidden border-dashed w-full absolute top-[4.5rem]"/>
+          <div className="border-t-2 border-secondary lg:block hidden border-dashed w-full absolute top-[4.5rem]" />
         </div>
         {/* <div className="w-full mt-12 lg:hidden">
           <Swiper
