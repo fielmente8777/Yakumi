@@ -13,7 +13,7 @@ export const pageData = {
     buttons: [
       {
         label: "Get in Touch",
-        href: "#contact-us",
+        href: "#contact_us",
       },
       // {
       //   label: "View Menu",
@@ -27,7 +27,7 @@ export const pageData = {
     desc: "At Yakumi, we bring the authentic taste of Asian cuisine straight to your doorstep. As a modern cloud kitchen, we focus on delivering exceptional flavors, crafted with the finest ingredients, and made with traditional recipes that have been perfected over time. Our team of skilled chefs uses the freshest local produce, paired with premium spices and sauces, to create dishes that reflect the true essence of Chinese cooking. Come taste the tradition, convenience, and passion behind every dish – only at Yakumi.",
     src: imageUrl + "Image82.webp",
     label: "contact us",
-    href: "#contact-us",
+    href: "#contact_us",
   },
   features: {
     title: "Features",
@@ -44,7 +44,7 @@ export const pageData = {
         id: 2,
         title: "Authentic Asian Flavors",
         subtitle:
-          "njoy bold, authentic Asian flavors expertly crafted with traditional ingredients and timeless recipes.",
+          "Enjoy bold, authentic Asian flavors expertly crafted with traditional ingredients and timeless recipes.",
         icon: <AuthenticAsianFlavors />,
       },
       {
