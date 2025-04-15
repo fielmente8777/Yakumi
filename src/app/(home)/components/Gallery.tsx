@@ -55,7 +55,7 @@ const Gallery: React.FC<GalleryDataProps> = ({ title, images }) => {
             ))}
           </Swiper>
         </div>
-        <div className="pagination_1 flex items-center justify-center gap-1 w-full"></div>
+        <div className="pagination_1 flex items-center justify-center gap-3 w-full max-lg:hidden"></div>
 
         <Button
           href="https://www.instagram.com/burgergullykolkata/?hl=en"
