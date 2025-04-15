@@ -12,7 +12,7 @@ const ContactUs = () => {
             <div className="absolute lg:-top-[40%] -top-[48%] max-sm:-right-8 w-full">
               <div className="relative w-full lg:aspect-[4/4.8] aspect-[5/6]">
                 <Image
-                  src={imageUrl + "img5.webp"}
+                  src={imageUrl + "Image.png"}
                   alt="contact"
                   fill
                   sizes="100vw"
