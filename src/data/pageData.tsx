@@ -15,10 +15,10 @@ export const pageData = {
         label: "Get in Touch",
         href: "#contact-us",
       },
-      {
-        label: "View Menu",
-        href: "#",
-      },
+      // {
+      //   label: "View Menu",
+      //   href: "#",
+      // },
     ],
   },
   aboutUsData: {
