@@ -19,7 +19,7 @@ const Banner: React.FC<BannerProps> = ({ title, src }) => {
 
           <div className="absolute inset-0 flex items-center justify-center w-full h-full">
             <div className="flex flex-col gap-4 max-w-lg w-full">
-              <h1 className="largeHeading font_go uppercase letter_spacing font-semibold max-sm:text-center">
+              <h1 className="largeHeading font_go text-center uppercase letter_spacing font-semibold max-sm:text-center">
                 {title}
               </h1>
               {/* <Paragraph
