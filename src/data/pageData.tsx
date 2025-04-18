@@ -8,7 +8,7 @@ import { imageUrl } from "./links";
 export const pageData = {
   bannerData: {
     title: "Flavors of Asia Reimagined for You",
-    src: imageUrl + "img1.webp",
+    src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/yakumi/video.MP4",
     desc: "Immerse yourself in the vibrant world of Asian flavors.Our dishes are designed to bring the best of Asia directly to your plate.",
     buttons: [
       {

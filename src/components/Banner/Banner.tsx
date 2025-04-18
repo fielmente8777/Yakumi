@@ -12,10 +12,10 @@ interface BannerProps {
 }
 const Banner: React.FC<BannerProps> = ({ title, src }) => {
   return (
-    <section className="max-w-[1600px] mx-auto bg-primary text-white lg:mb-10">
+    <section className="max-w-[1600px] mx-auto text-white lg:mb-10">
       <div className="">
         <div className="relative w-full lg:aspect-[4/1.6] aspect-[4/3]">
-          <LazyLoadedVideo src={src} poster={src} controls={false} />
+          <LazyLoadedVideo src={src} poster={src} controls={false} muted={true} autoPlay={true} />
 
           <div className="absolute inset-0 flex items-center justify-center w-full h-full">
             <div className="flex flex-col gap-4 max-w-lg w-full">
