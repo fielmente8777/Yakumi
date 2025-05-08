@@ -32,6 +32,22 @@ export const FillInstagram = () => (
   </svg>
 );
 
+export const DownloadIcon = ({...props})=>(
+  <svg
+      width={24}
+      height={25}
+      viewBox="0 0 24 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M12 16.5l-5-5 1.4-1.45 2.6 2.6V4.5h2v8.15l2.6-2.6L17 11.5l-5 5zm-6 4c-.55 0-1.02-.196-1.412-.587A1.926 1.926 0 014 18.5v-3h2v3h12v-3h2v3c0 .55-.196 1.02-.587 1.413A1.926 1.926 0 0118 20.5H6z"
+        fill="currentColor"
+      />
+    </svg>
+)
+
 export const PremiumQuality = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

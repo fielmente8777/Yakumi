@@ -2,6 +2,8 @@ import Image from "next/image";
 import Paragraph from "./Paragraph/Paragraph";
 import Button from "./Button";
 import { AboutUsDataProps } from "@/@types/types";
+import Link from "next/link";
+import { DownloadIcon } from "@/icons/icons";
 
 const TwoColGridCard: React.FC<AboutUsDataProps> = ({
   title,
@@ -40,7 +42,7 @@ const TwoColGridCard: React.FC<AboutUsDataProps> = ({
           {title && (
             <div className="flex flex-col gap-2">
               <h2 className="capitalize font_go text-primary mediumHeading ">
-                  {title}
+                {title}
               </h2>
               <h3 className="capitalize text-secondary heading1 font-semibold">
                 {subtitle}
@@ -48,13 +50,22 @@ const TwoColGridCard: React.FC<AboutUsDataProps> = ({
             </div>
           )}
           {desc && <Paragraph text={desc} />}
-          {label && href && (
-            <Button
-              label={label}
-              href={href}
-              className="bg-secondary !rounded-full w-fit px-6"
-            />
-          )}
+          <div className="flex items-center gap-4">
+            {label && href && (
+              <Button
+                label={label}
+                href={href}
+                className="bg-secondary !rounded-full w-fit px-6"
+              />
+            )}
+            <Link href="/menu.pdf" target="_blank" className="flex items-center gap-2 text-primary font-medium hover:text-secondary inter">
+              <span className="sr-only">Download Menu</span>{" "}
+              <span>
+                <DownloadIcon />
+              </span>
+              Download Menu
+            </Link>
+          </div>
         </div>
       </div>
     </>
