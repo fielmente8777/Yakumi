@@ -59,7 +59,7 @@ export const SocialLink: socialLinkProps[] = [
     id: 2,
     label: "instagram",
     icon: <FillInstagram />,
-    href: "https://www.instagram.com/yakumi.india?igsh=Y2h2NDAwYzh2YWU4&utm_source=qr",
+    href: "https://www.instagram.com/yakumi.gurgaon?igsh=MXFsbDNhNjQwdmdkdA==",
   },
 ];
 
